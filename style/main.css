@@ -1,8 +1,233 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+.nav-item a {
+    color: #234CAD;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 29px;
+
+}
+
+.bt {
+    box-sizing: border-box;
+    border: 1px solid #234CAD;
+    border-radius: 25px;
+    color: #234CAD;
+    width: 135px;
+    height: 50px;
+}
+
+.bn {
+    width: 135px;
+    height: 50px;
+    border-radius: 25px;
+    background: #F2F6FF;
+    color: #234CAD;
+    border: 1px solid #fefeff;
+
+}
+
+
+
+
+.post {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: #234CAD;
+}
+
+
+.test {
+    background-color: #F2F6FF;
+    border-radius: 60px;
+}
+
+.tes {
+    color: #234CAD;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2px;
+    margin-top: 35px;
+
+}
+
+.get {
+    margin-top: 55px;
+    box-sizing: border-box;
+    border: 1px solid #234CAD;
+    border-radius: 25px;
+    color: #234CAD;
+    width: 135px;
+    height: 50px;
+}
+
+.kotak {
+    margin-left: 100px;
+    width: 75px;
+    height: 75px;
+    margin-left: 500px;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
+.img {
+    width: 45%;
+    margin-left: 27%;
+}
+
+.login-box {
+    border-radius: 12px;
+    background-color: purple;
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    margin: 50px auto;
+    min-height: 700px;
+    -webkit-box-shadow: 0 2px 60px -5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 60px -5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-family: "Script MT";
+    font-size: 54px;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.logo .logo-font {
+    color: #3BC3FF;
+}
+
+@media only screen and (max-width: 767px) {
+    .logo {
+        font-size: 34px;
+    }
+}
+
+.header-title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.text-center {
+    color: white;
+}
+
+.login-form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.login-form .form-control {
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.login-form .form-group {
+    position: relative;
+}
+
+.login-form .form-group .forgot-password {
+    position: absolute;
+    top: 6px;
+    right: 15px;
+}
+
+.login-form .btn {
+    border-radius: 10px;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    color: black;
+}
+
+
+.login-form .btn.btn-primary {
+    background: #3BC3FF;
+    border-color: #31c0ff;
+}
+
+.slider-feature-card {
+    background: #fff;
+    max-width: 280px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+    -webkit-box-shadow: 0 2px 25px -3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 25px -3px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.slider-feature-card img {
+    height: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.slider-feature-card h3,
+.slider-feature-card p {
+    margin-bottom: 30px;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-indicators li {
+    cursor: pointer;
+}
+
+
+.card-img-left {
+    width: 45%;
+    background: scroll center url('../img/4338262_2249233.jpg');
+    background-size: cover;
+    background-color: purple;
+}
+
+.req {
+    text-align: center;
+}
+
+.btn-login {
+    font-size: 0.9rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+}
+
+.link {
+    text-align: center;
+}
+
+.fab {
+    font-size: 15px;
 }
