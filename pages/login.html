@@ -1,89 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../style/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="shorcut icon" href="../images/icon.png" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=initial-scale=1.0">
-  <title>Login Page</title>
-  <link rel="stylesheet" href="../style/main.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
-
-<body>
-  <section class="body">
-    <div class="container">
-      <div class="login-box">
-        <div class="row">
-          <div class="col-sm-6">
-            <div class="logo">
-              <span class="logo-font">Repo</span>Code
+  <body>
+    <section class="body">
+      <div class="container">
+        <div class="login-box">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="logo"><span class="logo-font">Repo</span>Code</div>
+              <img
+                class="img"
+                src="../img/github-512_11zon-removebg-preview.png"
+                alt=""
+              />
             </div>
-            <img class="img" src="../img/github-512_11zon-removebg-preview.png" alt="">
           </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-6">
-            <br>
-            <h3 class="header-title">LOGIN</h3>
-            <form class="login-form">
-              <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInputEmail" placeholder="name@example.com">
-                <label for="floatingInputEmail">Email address</label>
-              </div>
-              <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInputEmail" placeholder="name@example.com">
-                <label for="floatingInputEmail">Password</label>
-
-              </div>
-              <div class="form-group">
-                <button class="btn btn-primary">LOGIN</button>
-                <a href="#" class="forgot-password">Forgot Password?</a>
-              </div>
-              <div class="form-group">
-                <div class="text-center">New Member? <a href="./register.html">Sign up Now</a>
+          <div class="row">
+            <div class="col-sm-6">
+              <br />
+              <h3 class="header-title">LOGIN</h3>
+              <form class="login-form">
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="usernameLogin"
+                    placeholder="name@example.com"
+                  />
+                  <label for="floatingInputEmail">Email address</label>
                 </div>
-              </div>
-            </form>
-          </div>
-          <div class="col-sm-6 hide-on-mobile">
-            <div id="caru" class="carousel slide" data-ride="carousel">
-
-              <ul class="carousel-indicators">
-                <li data-target="#caru" data-slide-to="0" class="active"></li>
-                <li data-target="#caru" data-slide-to="1"></li>
-              </ul>
-
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="slider-feature-card">
-                    <img src="../img/4338262_2249233.jpg" alt="">
-                    <h3 class="slider-title">Title Here</h3>
-                    <p class="slider-description">Lorem ipsum dolor sit amet, consectetur
-                      adipisicing elit. Iure, odio!</p>
+                <div class="form-floating mb-3">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="passwordLogin"
+                    placeholder="password"
+                    maxlength="12"
+                  />
+                  <label for="floatingInputEmail">Password</label>
+                  <div class="icon-pass">
+                    <i class="material-icons" id="pass-login">visibility</i>
                   </div>
                 </div>
-                <div class="carousel-item">
-                  <div class="slider-feature-card">
-                    <img src="../img/825159_preview.jpg" alt="">
-                    <h3 class="slider-title">Title Here</h3>
-                    <p class="slider-description">Lorem ipsum dolor sit amet, consectetur
-                      adipisicing elit. Ratione, debitis?</p>
+                <div class="form-group">
+                  <button class="btn btn-primary" id="btn-login">LOGIN</button>
+                  <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+                <div class="form-group">
+                  <div class="text-center">
+                    New Member? <a href="./register.html">Sign up Now</a>
                   </div>
                 </div>
+              </form>
+            </div>
+            <div class="col-sm-6 hide-on-mobile">
+              <div id="caru" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                  <li data-target="#caru" data-slide-to="0" class="active"></li>
+                  <li data-target="#caru" data-slide-to="1"></li>
+                </ul>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="slider-feature-card">
+                      <img src="../img/4338262_2249233.jpg" alt="" />
+                      <h3 class="slider-title">Title Here</h3>
+                      <p class="slider-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Iure, odio!
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="slider-feature-card">
+                      <img src="../img/825159_preview.jpg" alt="" />
+                      <h3 class="slider-title">Title Here</h3>
+                      <p class="slider-description">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Ratione, debitis?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#caru" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#caru" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
               </div>
-              <a class="carousel-control-prev" href="#caru" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-              </a>
-              <a class="carousel-control-next" href="#caru" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-              </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-</body>
-
+    </section>
+    <script src="../script/login.js"></script>
+  </body>
 </html>

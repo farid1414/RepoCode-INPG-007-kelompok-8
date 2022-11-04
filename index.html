@@ -1,154 +1,881 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="shorcut icon" href="./images/icon.png" />
+    <title>RepoCode</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./style/main.css" />
-  <title>RepoCode</title>
-</head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <i class="fa fa-bars list" aria-hidden="true"></i>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="login">
+            <div class="justify-content-md-end" id="nav-no-login">
+              <a href="./pages/login.html"
+                ><button class="bt me-2" type="button">Login</button></a
+              >
+              <a href="./pages/register.html"
+                ><button class="bn" type="button">Sign Up</button></a
+              >
+            </div>
+            <div
+              class="justify-content-md-end"
+              id="nav-login"
+              style="display: none"
+            >
+              <button
+                class="bt me-2"
+                type="button"
+                id="username-profil"
+              ></button>
+              <button class="bn" type="button" id="btn-logout">Logout</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <div class="container mt-3">
+        <div class="p-5 test mb-4">
+          <div class="container py-5">
+            <h1 class="display-5 post fw-bold">Busines</h1>
+            <h1 class="display-5 post fw-bold">Communication</h1>
+            <h1 class="display-5 post fw-bold">Reinvented</h1>
+          </div>
+          <div class="main">
+            <p class="col-md-8 fs-4">Start communicating with your business</p>
+            <p class="col-md-8 fs-4">team more efficiently with ou app</p>
+          </div>
+          <button class="get" type="button">Get The App</button>
+        </div>
+        <div class="card-header">
+          <div class="card-body">
+            <div class="card-1">
+              <div class="icons">
+                <i class="fa fa-cloud-upload"></i>
+              </div>
+            </div>
+            <div class="text-content">
+              <h2 class="text-content">Uploading Document</h2>
+              <h2 class="text-content">7,09/ 108,98 GB</h2>
+            </div>
+            <div class="card-header kartu">
+              <div class="icons-2">
+                <i class="fa fa-audio-description"></i>
+              </div>
+              <div class="text-2">
+                <h4>Anna Brooks</h4>
+                <p class="massage">Hi, how are you doing to day ?</p>
+              </div>
+            </div>
 
-<body>
-  <nav class="navbar navbar-expand-lg bg-light">
+            <div class="card-header kartu-1">
+              <div class="icons-3">
+                <i class="fa fa-file"></i>
+              </div>
+            </div>
+            <div class="card-header kartuu">
+              <div class="icons-21">
+                <i class="fa fa-calendar"></i>
+              </div>
+              <div class="text-21">
+                <h4>Team Meeting</h4>
+                <p class="massagee">2:30 PM 15 April 2020</p>
+              </div>
+              <div class="icons-212">
+                <p class="jm">JM</p>
+              </div>
+              <div class="icons-213">
+                <p class="ac">AC</p>
+              </div>
+              <div class="icons-214">
+                <p class="kd">KD</p>
+              </div>
+              <div class="icons-215">
+                <p class="plus">+8</p>
+              </div>
+            </div>
+            <div class="card-header kartuuu">
+              <div
+                class="icons-216"
+                style="
+                  margin-top: 29px;
+                  margin-left: 15px;
+                  background-color: #f2f6ff;
+                  border-radius: 50px;
+                  width: 50px;
+                  height: 50px;
+                "
+              >
+                <p class="js">JS</p>
+              </div>
+              <div class="ls">
+                <p class="tm">11:02 AM</p>
+                <p class="jh">John Smith</p>
+                <p class="mase">Hallo, are you available for a pro...</p>
+              </div>
+            </div>
+            <div
+              class="card-header kartuuuu"
+              style="
+                width: 75px;
+                height: 75px;
+                color: #f2f6ff;
+                margin-left: 355px;
+                margin-top: -50px;
+              "
+            >
+              <div class="icons-217">
+                <i class="fa fa-comment"></i>
+              </div>
+            </div>
+            <div
+              class="card-header kartuuuuu"
+              style="margin-top: -190px; margin-left: 363px"
+            >
+              <div class="icons-218">
+                <i class="fa ya fa-bookmark"></i>
+              </div>
+              <div class="">
+                <p class="msg">Message Saved</p>
+                <p class="psn">Your have successfully saved this message</p>
+              </div>
+            </div>
+            <div
+              class="card-header kartuuuuuu"
+              style="
+                width: 130px;
+                height: 160px;
+                margin-left: 370px;
+                margin-top: -390px;
+              "
+            >
+              <div class="icons-219">
+                <i class="fa fa-cloud-upload"></i>
+              </div>
+              <p class="dta">1,73/ 2,09 GB</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <div class="container">
-      <a class="navbar-brand" href="#">
-        <i class="fa fa-bars list" aria-hidden="true"></i>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Product</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-
-        </ul>
-        <form class="d-flex" role="login">
-          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <a href="./pages/login.html"><button class="bt" type="button">
-                Login
-              </button></a>
-            <a href="./pages/register.html"><button class="bn" type="button">Sign Up</button></a>
-
-          </div>
-        </form>
-      </div>
-    </div>
-  </nav>
-  <div class="container mt-3">
-    <div class="p-5 test mb-4 ">
-      <div class="container py-5">
-        <h1 class="display-5 post fw-bold">Busines </h1>
-        <h1 class="display-5 post fw-bold">Communication </h1>
-        <h1 class="display-5 post fw-bold">Reinvented</h1>
-      </div>
-      <div class="main">
-        <p class="col-md-8 fs-4">Start communicating with your business</p>
-        <p class="col-md-8 fs-4">team more efficiently with ou app</p>
-      </div>
-      <button class="get" type="button">Get The App</button>
-    </div>
-    <div class="card">
-      <div class="card-body">
-        <div class="card-1">
-          <div class="icons">
-            <i class="fa fa-cloud-upload"></i>
+      <div
+        class="row page-drive"
+        style="margin-top: 25rem; margin-bottom: 2rem"
+      >
+        <div class="col-md-6 col-12 mb-3">
+          <div class="d-flex">
+            <div class="icon-drive">
+              <i class="material-icons">cloud_queue</i>
+            </div>
+            <div class="text-drive">
+              <div class="title-drive">Cloud based</div>
+              <div class="sub-title-drive">
+                All your messages are always backed up.
+              </div>
+            </div>
           </div>
         </div>
-        <div class="text-content">
-          <h2 class="text-content">Uploading Document</h2>
-          <h2 class="text-content">7,09/ 108,98 GB</h2>
-        </div>
-        <div class="card kartu">
-          <div class="icons-2">
-            <i class="fa fa-audio-description"></i>
+        <div class="col-md-6 col-12 mb3">
+          <div class="d-flex">
+            <div class="icon-drive">
+              <i class="material-icons">lock_outline</i>
+            </div>
+            <div class="text-drive">
+              <div class="title-drive">Secured</div>
+              <div class="sub-title-drive">
+                All your messages are stored very securely.
+              </div>
+            </div>
           </div>
-          <div class="text-2">
-            <h4>Anna Brooks</h4>
-            <p class="massage">Hi, how are you doing to day ?</p>
-          </div>
-        </div>
-
-        <div class="card kartu-1">
-          <div class="icons-3">
-            <i class="fa fa-file"></i>
-          </div>
-        </div>
-        <div class="card kartuu">
-          <div class="icons-21">
-            <i class="fa fa-calendar"></i>
-          </div>
-          <div class="text-21">
-            <h4>Team Meeting</h4>
-            <p class="massagee">2:30 PM 15 April 2020</p>
-          </div>
-          <div class="icons-212">
-            <p class="jm">JM</p>
-          </div>
-          <div class="icons-213">
-            <p class="ac">AC</p>
-          </div>
-          <div class="icons-214">
-            <p class="kd">KD</p>
-          </div>
-          <div class="icons-215">
-            <p class="plus">+8</p>
-          </div>
-        </div>
-        <div class="card kartuuu">
-          <div class="icons-216">
-            <p class="js">JS</p>
-          </div>
-          <div class="ls">
-            <p class="tm">11:02 AM</p>
-            <p class="jh">John Smith</p>
-            <p class="mase">Hallo, are you available for a pro...</p>
-          </div>
-        </div>
-        <div class="card kartuuuu">
-          <div class="icons-217">
-            <i class="fa fa-comment"></i>
-          </div>
-        </div>
-        <div class="card kartuuuuu">
-          <div class="icons-218">
-            <i class="fa ya fa-bookmark"></i>
-          </div>
-          <div class="">
-            <p class="msg">Message Saved</p>
-            <p class="psn">Your have successfully saved this message</p>
-          </div>
-        </div>
-        <div class="card kartuuuuuu">
-          <div class="icons-219">
-            <i class="fa fa-cloud-upload"></i>
-          </div>
-          <p class="dta">1,73/ 2,09 GB</pc>
         </div>
       </div>
     </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-    crossorigin="anonymous"></script>
-</body>
 
+    <section class="product">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-12 mb-4">
+            <div class="box-product">
+              <div class="card card-product">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-3">
+                      <div class="profile-content">AJ</div>
+                      <div class="announcement-profile">2</div>
+                    </div>
+                    <div class="col-6">
+                      <div class="name-profil">Andrew Johnson</div>
+                      <div class="message-profil">
+                        <marquee direction="left"
+                          >I have seen that you are availabble</marquee
+                        >
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="time-profil">1:03 PM</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card card-product second">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-3">
+                      <div class="profile-content">AJ</div>
+                      <div class="announcement-profile">2</div>
+                    </div>
+                    <div class="col-6">
+                      <div class="name-profil">Daniel Luke</div>
+                      <div class="message-profil">
+                        <marquee direction="left"
+                          >Would you like to have a meeting</marquee
+                        >
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="time-profil">1:03 PM</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card card-product third">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-3">
+                      <div class="profile-content">AJ</div>
+                      <div class="announcement-profile">2</div>
+                    </div>
+                    <div class="col-6">
+                      <div class="name-profil">Mark Clarke</div>
+                      <div class="message-profil">
+                        <marquee direction="left"
+                          >Would you like to have a meeting</marquee
+                        >
+                      </div>
+                    </div>
+                    <div class="col-3">
+                      <div class="time-profil">1:03 PM</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-12 mb-3">
+            <div class="product-text">
+              <div class="product-title">
+                Use our app to send messages to your team
+              </div>
+              <div class="sub-title-product">
+                We offer really easy communications for all businesses from
+                small to large.
+              </div>
+              <a href="" class="btn btn-product" id="btn-product"
+                >Get the app
+                <i class="material-icons" id="material-icons"
+                  >arrow_forward</i
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="transform">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h3>Transform your communications</h3>
+            <p>
+              Our mobile app is the only thing you need to change the way you
+              communicate with your team
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="features">
+      <div class="container">
+        <div class="box-features">
+          <div class="row">
+            <div class="col-md-5 col-12 py-3">
+              <div class="card card-message mt-top ms-auto mb-3">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-3">
+                      <div class="logo-card">
+                        <i class="fa fa-bookmark-o"></i>
+                      </div>
+                    </div>
+                    <div class="col-9">
+                      <div class="text-card-features">Message Saved</div>
+                      <div class="sub-title-features-card">
+                        You have successfully saved this message
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card only-logo ms-auto mt-4">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="logo-card">
+                        <img src="./images/message.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7 col-12 py-3">
+              <div class="row">
+                <div class="col-2 mt-lg-3">
+                  <div class="card only-logo file me-auto mt-2">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="logo-card">
+                            <img src="./images/file.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-10">
+                  <div class="card card-message brooks me-auto mb-3">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-2">
+                          <div class="logo-card">SB</div>
+                          <div class="announcement-brooks">2</div>
+                        </div>
+                        <div class="col-7">
+                          <div class="text-card-features">Spencer Brooks</div>
+                          <div class="sub-title-features-card">
+                            Have you seen the project requi…
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="time-brooks">3:08 PM</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-5">
+                  <div class="card card-message service me-auto mb-3">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-3">
+                          <div class="logo-card">
+                            <i class="fa fa-calendar-o"></i>
+                          </div>
+                        </div>
+                        <div class="col-9">
+                          <div class="text-card-features">Sales Meeting</div>
+                          <div class="sub-title-features-card">
+                            10:30 AM 05 May 2020
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="icon-sales">
+                            <div class="people-sales ms-2">KR</div>
+                            <div class="people-sales">MJ</div>
+                            <div class="people-sales">OI</div>
+                            <div class="people-sales">+3</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-7">
+                  <div class="card card-message upload me-auto mb-3">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-3">
+                          <div class="logo-card">
+                            <img src="./images/back-up.svg" alt="" />
+                          </div>
+                        </div>
+                        <div class="col-9">
+                          <div class="text-card-features">
+                            Uploading Document
+                          </div>
+                          <div class="sub-title-features-card">
+                            27,09/ 78,93 GB
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-md-8 col-12">
+                  <div class="card card-message profile-2 me-auto mb-3">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-2">
+                          <div class="logo-card">AS</div>
+                          <div class="announcement-brooks">2</div>
+                        </div>
+                        <div class="col-7 mt-2">
+                          <div class="text-card-features">Amy Smith</div>
+                          <div class="sub-title-features-card">
+                            Could please call me now? It is i…
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="time-brooks">5:18 PM</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-4">
+                <div class="col-md-3 col-12">
+                  <div class="card only-logo back-up me-auto mt-2">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="logo-card">
+                            <img src="./images/back-up.svg" alt="" />
+                          </div>
+                          <div class="text-back-up">6,02/ 7,98 GB</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <div class="box-about">
+          <div class="row">
+            <div class="col-md-6 col-12">
+              <div class="text-about">
+                <div class="title-text-about">
+                  Increase the efficiency within your company
+                </div>
+                <div class="sub-title-about">
+                  Our app is the great way for you to start getting more tasks
+                  done.
+                </div>
+                <a href="" class="btn-about">Get the app</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-12">
+              <div class="box-icon-about">
+                <div class="row mt-4 mb-3">
+                  <div class="col-7">
+                    <div class="card card-about">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-4">
+                            <div class="icon-about">
+                              <i class="fa fa-calendar-o"></i>
+                            </div>
+                          </div>
+                          <div class="col-8">
+                            <div class="title-card-about">Daily Standup</div>
+                            <div class="time-about">2:30 PM 15 Apr 2020</div>
+                          </div>
+                        </div>
+                        <div class="people-about">
+                          <div class="icon-people">KU</div>
+                          <div class="icon-people">MG</div>
+                          <div class="icon-people">AI</div>
+                          <div class="icon-people">+29</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="card card-about-2">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-4">
+                            <div class="icon-about">
+                              <i class="fa fa-calendar-o"></i>
+                            </div>
+                          </div>
+                          <div class="col-8">
+                            <div class="text-card-about-2">
+                              <div class="title-card-about">
+                                <marquee behavior="left">Daily Emails</marquee>
+                              </div>
+                              <div class="time-about">
+                                <marquee behavior="left"
+                                  >8:30 AM 28 Apr 2020</marquee
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="people-about">
+                          <div class="icon-people">MC</div>
+                          <div class="icon-people">KY</div>
+                          <div class="icon-people">AI</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-4 mb-3">
+                  <div class="col-7">
+                    <div class="card card-about">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-4">
+                            <div class="icon-about">
+                              <i class="fa fa-calendar-o"></i>
+                            </div>
+                          </div>
+                          <div class="col-8">
+                            <div class="title-card-about">Marketing Call</div>
+                            <div class="time-about">4:45 PM 30 May 2020</div>
+                          </div>
+                        </div>
+                        <div class="people-about">
+                          <div class="icon-people">CO</div>
+                          <div class="icon-people">VN</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="card card-about-2">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-4">
+                            <div class="icon-about">
+                              <i class="fa fa-calendar-o"></i>
+                            </div>
+                          </div>
+                          <div class="col-8">
+                            <div class="text-card-about-2">
+                              <div class="title-card-about">
+                                <marquee behavior="left"
+                                  >Project Meeting</marquee
+                                >
+                              </div>
+                              <div class="time-about">
+                                <marquee behavior="left"
+                                  >5:45 PM 1 Jun 2020</marquee
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="people-about">
+                          <div class="icon-people">TE</div>
+                          <div class="icon-people">DE</div>
+                          <div class="icon-people">PB</div>
+                          <div class="icon-people">+2</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-4 mb-3">
+                  <div class="col-7">
+                    <div class="card card-about">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-4">
+                            <div class="icon-about">
+                              <i class="fa fa-calendar-o"></i>
+                            </div>
+                          </div>
+                          <div class="col-8">
+                            <div class="title-card-about">Presentation</div>
+                            <div class="time-about">10:15 AM 2 Jul 2020</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <div class="card card-about-2">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-4">
+                            <div class="icon-about">
+                              <i class="fa fa-calendar-o"></i>
+                            </div>
+                          </div>
+                          <div class="col-8">
+                            <div class="text-card-about-2">
+                              <div class="title-card-about">
+                                <marquee behavior="left">Sales Call</marquee>
+                              </div>
+                              <div class="time-about">
+                                <marquee behavior="left"
+                                  >12:30 PM 5 May 2020</marquee
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid">
+        <div class="container p-5">
+          <div class="row mb-3">
+            <div class="col-lg-5 col-md-12 m-auto">
+              <div class="sub-heading text-center">
+                <h2>Explore our simple pricing</h2>
+                <span
+                  >We offer one of the most competitive prices on the <br />
+                  market for everyone.</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="row mx-auto mb-5">
+            <div class="col-lg-4 mb-4">
+              <div class="card card-footer text-center Card-pertama">
+                <div class="card-body">
+                  <div class="text-center p-3">
+                    <h5 class="card-title">Basic</h5>
+                    <br />
+                    <span class="h2">$9</span> <br />
+                    <small class="month">Per month</small>
+                  </div>
+
+                  <button type="button" class="btn btn-cardpertama">
+                    Learn more
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+              <div class="card card-footer text-center Card-kedua">
+                <div class="card-body">
+                  <div class="text-center p-3">
+                    <h5 class="card-title">Premium</h5>
+                    <br />
+                    <span class="h2">$29</span> <br />
+                    <small class="month">Per month</small>
+                  </div>
+
+                  <button type="button" class="btn btn-cardkedua">
+                    Get started
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+              <div class="card card-footer text-center Card-ketiga">
+                <div class="card-body">
+                  <div class="text-center p-3">
+                    <h5 class="card-title">Enterprise</h5>
+                    <br />
+                    <span class="h2">$129</span> <br />
+                    <small class="month">Per month</small>
+                  </div>
+                  <button type="button" class="btn btn-cardketiga">
+                    Learn more
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container-fluid">
+        <div class="container email-box">
+          <div class="row mb-5">
+            <div class="col-lg-5 col-md-8 m-auto">
+              <div class="sub-heading text-center">
+                <h2 class="mb-3 mt-5">Sign up to our newsletter</h2>
+                <span
+                  >We offer one of the most competitive prices on the <br />
+                  market for everyone.</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-5 col-md-12 mx-auto">
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter your email address"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="btn btn-news btn-primary"
+                  type="button"
+                  id="button-addon2"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-link text-center mt-5">
+      <div class="container p-4">
+        <section class="">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Repocode</h5>
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-next">
+                    © 2020 - All rights <br />
+                    reserved</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">PRODUCT</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-next">Benefits</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-next">Feedback</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-next">Feedback</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">ABOUT</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-next">Company</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-next">Teams</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">SUPPORT</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-next">Get help</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-next">Terms of service</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script/main.js"></script>
+  </body>
 </html>
