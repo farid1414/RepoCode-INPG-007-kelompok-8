@@ -48,12 +48,16 @@ btnSubmitLogin.addEventListener("click", (e) => {
   } else {
     getDataStorage.forEach((isi, index) => {
       if (userLogin.value === isi.email && passLogin.value === isi.password) {
-        console.log("benar");
         localStorage.setItem("token-login", randomString(10));
         localStorage.setItem("username", isi.username);
         window.location.href = "../index.html";
-      } else {
+        return;
+      } else if (
+        userLogin.value != isi.email &&
+        passLogin.value != isi.password
+      ) {
         alert("username atau password salah");
+        return;
       }
     });
   }

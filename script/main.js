@@ -41,3 +41,17 @@ function logoutStorage() {
     navLogin.style.display = "none";
   }
 }
+
+function unloadStorage(e) {
+  e.preventDefault();
+  if (
+    localStorage.getItem("token-login") != null &&
+    localStorage.getItem("username") != null
+  ) {
+    localStorage.removeItem("token-login");
+    localStorage.removeItem("username");
+
+    navbarNoLogin.style.display = "flex";
+    navLogin.style.display = "none";
+  }
+}
